@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+	
+	.img1{
+		position: absolute;
+		width: 100px;
+		left: 1550px;
+		top: 820px;
+	}
+
+	.img2{
+		position: absolute;
+		width: 30px;
+		left: 1800px;
+		top: 560px;
+	}
+
+	.img3{
+		position: absolute;
+		width: 60px;
+		left: 620px;
+		top: 420px;
+	}
+
+	.img4{
+		position: absolute;
+		width: 60px;
+		left: 990px;
+		top: 790px;
+	}
+
+</style>
+</head>
+
+<body style="background-image: url(1.jpg); background-size: cover; text-shadow: 0px 0px 2px black;">
+<div style="width: 220px; height: 350px; background-color: white; border-radius: 10px; box-shadow: 3px 3px 10px black;">
+<h1>ОЧКИ: <span class="score">0</span></h1>
+<h1 class="s1">кот</h1>
+<h1 class="s2">зелёный перец</h1>
+<h1 class="s3">кирпич</h1>
+<h1 class="s4">миска</h1>
+</div>
+
+<img src="1.png" class="img1">
+<img src="2.png" class="img2">
+<img src="3.png" class="img3">
+<img src="4.png" class="img4">
+
+<script type="text/javascript">
+
+	let score = 0;
+
+	document.querySelector('.score').innerHTML = score;
+
+	document.querySelector('.img1').onclick = function(){
+		score = score+1;
+		document.querySelector('.score').innerHTML = score;
+		document.querySelector('.img1').style.opacity = 0;
+		document.querySelector('.s1').style.opacity = 0;
+	}
+
+	document.querySelector('.img2').onclick = function(){
+		score = score+1;
+		document.querySelector('.score').innerHTML = score;
+		document.querySelector('.img2').style.opacity = 0;
+		document.querySelector('.s2').style.opacity = 0;
+	}
+
+	document.querySelector('.img3').onclick = function(){
+		score = score+1;
+		document.querySelector('.score').innerHTML = score;
+		document.querySelector('.img3').style.opacity = 0;
+		document.querySelector('.s3').style.opacity = 0;
+	}
+
+	document.querySelector('.img4').onclick = function(){
+		score = score+1;
+		document.querySelector('.score').innerHTML = score;
+		document.querySelector('.img4').style.opacity = 0;
+		document.querySelector('.s4').style.opacity = 0;
+	}
+
+</script>
+</body>
+
+</html>
